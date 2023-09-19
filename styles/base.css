@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@300&family=Heebo:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Barlow", Arial, sans-serif;
+}
+
+img {
+    width: 200px;
+    height: auto;
+  }
+
+header{
+    background-color: #98C1D9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30;
+}
+
+nav{
+    background-color: #3D5A80;
+    margin: 0 auto;
+    max-width: 700px;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav a {
+    display: block;
+    color: #E0FBFC;
+    text-align: center;
+    text-decoration: none;
+}
+
+nav a:hover{
+    background-color: #293241;
+}
+
+h2 {
+    text-align: center;
+    padding-top: 20px;
+    text-decoration: underline;
+}
+
+.card{
+    text-align: center;
+    border: 10px black;
+    padding: 20px;
+}
+
+.card ul{
+    list-style-type: none;
+}
+
