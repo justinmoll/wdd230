@@ -13,6 +13,7 @@ body {
 img {
     width: 200px;
     height: auto;
+    padding-right: 20px;
   }
 
 header{
@@ -20,13 +21,16 @@ header{
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 30;
+    padding: 30px;
+    color: #E0FBFC;
+    max-width: 400px;
+    margin: 0 auto;
 }
 
 nav{
     background-color: #3D5A80;
     margin: 0 auto;
-    max-width: 700px;
+    max-width: 400px;
 }
 
 nav ul {
@@ -52,11 +56,27 @@ h2 {
 
 .card{
     text-align: center;
-    border: 10px black;
     padding: 20px;
+    border: 1px solid black;
+    /* Look at this line of code ^^^^ */
 }
 
 .card ul{
     list-style-type: none;
 }
 
+footer{
+    text-align: center;
+    background-color: #98C1D9;
+    color: #E0FBFC;
+    margin: 0 auto;
+    max-width: 400px;
+}
+
+.cardTitle{
+    background-color: #3D5A80;
+    color: #E0FBFC;
+    display: block;
+    margin: 0 auto;
+    max-width: 400px;
+}
