@@ -1,4 +1,4 @@
-@media only screen and (min-width:1200px){
+@media only screen and (min-width:900px){
     
     body {
         font-family: "Barlow", Arial, sans-serif;
@@ -12,8 +12,10 @@
 
       header{
         background-color: #98C1D9;
+        max-width: 100%;
         padding: 30px;
         color: #E0FBFC;
+
         
     }
     
