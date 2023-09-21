@@ -58,7 +58,8 @@ h2 {
     text-align: center;
     padding: 20px;
     border: 1px solid black;
-    /* Look at this line of code ^^^^ */
+    width: 400px;
+    display: flex;
 }
 
 .card ul{
