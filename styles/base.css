@@ -31,9 +31,17 @@ nav{
     background-color: #3D5A80;
     margin: 0 auto;
     max-width: 400px;
+    padding: 5px;
 }
 
 nav ul {
+    list-style-type: none;
+}
+
+
+
+.week{
+    text-decoration: underline;
     list-style-type: none;
 }
 
@@ -56,7 +64,6 @@ h2 {
 
 .card{
     text-align: center;
-    padding: 20px;
     border: 1px solid black;
     width: 400px;
     display: flex;
@@ -79,6 +86,10 @@ section ul {
     list-style-type: none;
 }
 
+a:link {
+    text-decoration: none;
+}
+
 footer{
     text-align: center;
     background-color: #98C1D9;
@@ -91,6 +102,6 @@ footer{
     background-color: #3D5A80;
     height: auto;
     color: #E0FBFC;
-    display: block;
     max-width: 400px;
+    width: 100%;
 }
