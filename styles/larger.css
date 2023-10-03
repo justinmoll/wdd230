@@ -49,6 +49,14 @@
        justify-content: space-around;
     }
 
+    #menu {
+		display: none; /* hide hamburger button */
+	}
+
+    .navigation li{
+        display: block;
+    }
+
     footer{
         max-width: 100%;
         font-size: 20px
