@@ -26,14 +26,14 @@ hamButton.addEventListener('click', () => {
 // Add a dark mode button
 const modeButton = document.querySelector("#mode");
 const main = document.querySelector("main");
-const li = document.querySelector("#hyperlink");
+const li = document.querySelector(".hyperlink");
 
 modeButton.addEventListener("click", () => {
 	if (modeButton.textContent.includes("☑️")) {
 		main.style.background = "#293241";
 		main.style.color = "#fff";
 		modeButton.textContent = "❎";
-        // li.style.color = "#fff";
+		li.style.color = "#000";
 	} else {
 		main.style.background = "#eee";
 		main.style.color = "#000";
