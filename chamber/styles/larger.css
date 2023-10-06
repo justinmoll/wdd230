@@ -25,7 +25,7 @@
     .events, .weather, .spotlight1, .spotlight2, .spotlight3 {
         border: 1px solid black;
         width: 100%;
-        box-shadow: 5px 5px 10px #6f7364;
+        box-shadow: 2px 2px 5px #6f7364;
     }
 
     p {
@@ -37,8 +37,9 @@
         text-decoration: underline;
     }
 
-    .spotlight1 {
-        grid-column: 1fr;
+    .spotlight3 {
+        grid-column: 1/3;
+
     }
 
 }
