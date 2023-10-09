@@ -20,11 +20,13 @@
         background-image: url("https://a.travel-assets.com/findyours-php/viewfinder/images/res70/202000/202681-Petit-Jean-State-Park.jpg");
         height: 405px;
         /* background-position: unset; */
-        background-size: contain;
+        background-size: cover;
         background-repeat: no-repeat;
+        width: 80%;
         display: block;
         margin-left: auto;
         margin-right: auto;
+        position: relative;
         /* width: 50%; */
     }
 
@@ -59,10 +61,12 @@
     header{
         display: flex;
         align-items: center;
-        justify-content: center;
+        justify-content: left;
         color: #053225;
         background-color: #A9CBB7;
         width: 100%;
+        max-width: 10000px;
+        margin: 0;
     }
 
     nav{
@@ -104,5 +108,7 @@
         border-radius: 12px;
         display: block;
         justify-content: center;
+        position: absolute;
+        left: 50px;
     }
 }
