@@ -109,6 +109,10 @@
         display: block;
         justify-content: center;
         position: absolute;
-        left: 50px;
+        left: 900px;
+        top: 100px;
+        background-color: #EFECCA;
+        color: black;
+        padding: 15px 32px;
     }
 }
