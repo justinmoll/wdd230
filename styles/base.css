@@ -148,3 +148,15 @@ footer{
     width: 100%;
     height: auto;
 }
+
+.hero button {
+    border-radius: 12px;
+    display: block;
+    justify-content: center;
+    position: absolute;
+    /* left: 50px; */
+    top: 250px;
+    background-color: #EFECCA;
+    color: black;
+    padding: 15px 32px;
+}

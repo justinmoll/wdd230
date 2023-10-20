@@ -73,5 +73,18 @@
         margin-right: auto;
         position: relative;
     }
+
+    .hero button{
+        left: 300px;
+        top: 300px;
+    }
     
+    /* .map{
+       display: block; 
+       margin-left: auto;
+       margin-right: auto;
+       position: relative;
+       width: 50%;
+    } */
+
 }
