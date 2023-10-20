@@ -115,4 +115,10 @@
         color: black;
         padding: 15px 32px;
     }
+
+    /* CSS for discovery page */
+    .discovery-grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
 }

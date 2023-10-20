@@ -14,3 +14,7 @@ localStorage.setItem('numVisits', numVisits);
 // display number of visits
 let numVisitsSapn = document.querySelector('#number-of-visits');
 numVisitsSapn.textContent = numVisits;
+
+// {/* <p>
+//             Number of visits: <span id="number-of-visits"></span>
+//         </p> */}
