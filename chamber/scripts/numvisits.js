@@ -1,20 +1,43 @@
-// calculate number of visits
+// // calculate number of visits
 
-let numVisits = 1;
+// let numVisits = 1;
 
-if (localStorage.getItem('numVisits')) {
-    numVisits = parseInt(localStorage.getItem('numVisits'));
-    numVisits++; 
-}
+// if (localStorage.getItem('numVisits')) {
+//     numVisits = parseInt(localStorage.getItem('numVisits'));
+//     numVisits++; 
+// }
 
-// set local storage with number of visits
-localStorage.setItem('numVisits', numVisits);
+// // set local storage with number of visits
+// localStorage.setItem('numVisits', numVisits);
 
 
-// display number of visits
-let numVisitsSapn = document.querySelector('#number-of-visits');
-numVisitsSapn.textContent = numVisits;
+// // display number of visits
+// let numVisitsSapn = document.querySelector('#number-of-visits');
+// numVisitsSapn.textContent = numVisits;
 
 // {/* <p>
 //             Number of visits: <span id="number-of-visits"></span>
 //         </p> */}
+
+const visitsDisplay = document.querySelector(".visits");
+
+// 2️⃣ Get the stored VALUE for the numVisits-ls KEY in localStorage if it exists. If the numVisits KEY is missing, then assign 0 to the numVisits variable.
+let numVisits = Number(window.localStorage.getItem("numVisits-ls")) || 0;
+
+// 3️⃣ Determine if this is the first visit or display the number of visits. We wrote this example backwards in order for you to think deeply about the logic.
+
+if (numVisits == 1) {
+  visitsDisplay.textContent = `Welcome! Let us know if you have any questions.`
+} else {
+  visitsDisplay.textContent = `Back so soon! Awesome!`
+}
+
+
+
+// 4️⃣ increment the number of visits by one.
+numVisits++;
+
+// 5️⃣ store the new visit total into localStorage, key=numVisits-ls
+localStorage.setItem("numVisits-ls", numVisits);
+
+// 💡A client can view the localStorage data using the Applications panel in the browsers's DevTools - check it out on any major site.

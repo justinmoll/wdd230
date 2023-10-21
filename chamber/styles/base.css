@@ -106,3 +106,17 @@ footer {
     color: #053225;
     padding: 5px;
 }
+
+/* CSS for discover page */
+.discovery-grid img {
+    max-width: 400px;
+    height: auto 0;
+}
+
+.welcome-message, .eclipse, .camping, .sites, .dining, .adjacent{
+    border: 1px solid black;
+    width: 100%;
+    box-shadow: 2px 2px 5px #6f7364;
+    background-color: #053225;
+    color: #A9CBB7;
+}
