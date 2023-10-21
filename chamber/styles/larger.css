@@ -33,6 +33,7 @@
     .main-grid{
         display: grid;
         grid-template-columns: 2fr 1fr;
+        grid-gap: 10px;
     }
 
     
@@ -120,5 +121,14 @@
     .discovery-grid{
         display: grid;
         grid-template-columns: 1fr 1fr;
+        grid-gap: 10px;
+    }
+
+    .welcome-message, .eclipse, .camping, .sites, .dining, .adjacent{
+        border: 1px solid black;
+        width: 100%;
+        box-shadow: 2px 2px 5px #6f7364;
+        background-color: #053225;
+        color: #A9CBB7;
     }
 }
