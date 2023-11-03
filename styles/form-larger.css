@@ -1,0 +1,41 @@
+@media only screen and (min-width:900px){
+
+    body {
+        font-family: "Barlow", Arial, sans-serif;
+    }
+
+    img {
+        width: 200px;
+        height: auto;
+        padding-right: 20px;
+    }
+
+    header{
+        background-color: #98C1D9;
+        max-width: 100%;
+        padding: 30px;
+        color: #E0FBFC;
+        font-size: 20px;
+    }
+
+    nav{
+       max-width: 100%; 
+       font-size: 20px;
+    }
+
+    nav ul{
+        display: flex;
+       flex-direction: row;
+       justify-content: space-around;
+    }
+
+    .navigation li{
+        display: block;
+    }
+
+    footer{
+        max-width: 100%;
+        font-size: 20px
+    }
+
+}

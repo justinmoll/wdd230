@@ -1,31 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Justin Moll - WDD 230 - Web Frontend Development</title>
     <meta
       name="description"
       content="WDD 230 Web Frontend Development - Justin Moll - Form Page"
-    >
-    <meta name="author" content="Justin Moll">
-    <meta property="og:title" content="Justin Moll's WDD230 Form Portal">
-    <meta property="og:type" content="Education">
-    <meta property="og:url" content="https://justinmoll.github.io/wdd230/">
+    />
+    <meta name="author" content="Justin Moll" />
+    <meta property="og:title" content="Justin Moll's WDD230 Form Portal" />
+    <meta property="og:type" content="Education" />
+    <meta property="og:url" content="https://justinmoll.github.io/wdd230/" />
     <meta
       property="og:image"
-      content="https://cityofmorrilton.com/wp-content/uploads/photo-gallery/imported_from_media_libray/Downtown-Morrilton.jpg?bwg=1549402251">
+      content="https://cityofmorrilton.com/wp-content/uploads/photo-gallery/imported_from_media_libray/Downtown-Morrilton.jpg?bwg=1549402251"
+    />
     <link rel="stylesheet" href="./styles/normalize.css">
-    <link rel="stylesheet" href="styles/base.css">
-    <link rel="stylesheet" href="styles/larger.css">
-    <link rel="icon" href="./img/favicon.ico">
+    <link rel="stylesheet" href="./styles/form-base.css" />
+    <link rel="stylesheet" href="./styles/form-larger.css" />
+    <link rel="icon" href="./img/favicon.ico" />
   </head>
   <body>
     <header>
-      <div id="mode">
-        ☑️
-      </div>
-      <img src="img/Stud.webp" alt="Justin Moll">
+      <div id="mode">☑️</div>
+      <img src="img/Stud.webp" alt="Justin Moll" />
       <h1>Justin Moll</h1>
     </header>
     <nav>
@@ -37,22 +36,87 @@
       </ul>
     </nav>
     <main>
-        <h1>Page Rating</h1>
-        <form method="get" action="record.html">
+      <h1>Page Rating</h1>
+      <form method="get" action="record.html">
         <fieldset>
-            <legend>User information</legend>
-            <label>Username*<input type="text" id="username" name="username" required></label>
-            <label>Last Name*<input type="text" name="lname" required></label>
-            <label>Phone<input type="tel" name="phone" placeholder="1235551234"></label>
-            <label>Email*<input type="email" name="email" placeholder="someone@gmail.com" required></label>
-            <label>Website<input type="url" name="url" placeholder="https://"></label>
+          <legend>User information</legend>
+          <label
+            >Username*<input type="text" id="username" name="username" required
+          /></label>
+          <label>Last Name*<input type="text" name="lname" required /></label>
+          <label
+            >Phone<input type="tel" name="phone" placeholder="1235551234"
+          /></label>
+          <label
+            >Email*<input
+              type="email"
+              name="email"
+              placeholder="someone@gmail.com"
+              required
+          /></label>
+          <label
+            >Website<input type="url" name="url" placeholder="https://"
+          /></label>
         </fieldset>
 
         <fieldset>
-            <legend>Password</legend>
-            <label>Password<input type="password" id="password" name="password" required></label>
-            
+          <legend>Password</legend>
+          <label
+            >Password<input
+              type="password"
+              id="password"
+              pattern="[a-zA-Z0-9]{8}"
+              name="password"
+              required
+          /></label>
+          <label
+            >Please re-enter your password<input
+              type="password"
+              id="password"
+              pattern="[a-zA-Z0-9]{8}"
+              name="password"
+              required
+          /></label>
         </fieldset>
+
+        <fieldset>
+          <legend>Please enter a valid email address</legend>
+          <label
+            >Email*<input
+              type="email"
+              name="email"
+              placeholder="someone@gmail.com"
+              pattern="[a-zA-Z0-9._%+-]+@byui\.edu$"
+              required
+          /></label>
+        </fieldset>
+
+        <fieldset>
+          <legend>Page Rating</legend>
+          <label for="r">How would you rate this page?</label>
+          <div id="rangevalue">0</div>
+          <input
+            type="range"
+            id="r"
+            name="r"
+            min="0"
+            max="5"
+            value="0"
+            step="1"
+            list="rangevalues"
+          />
+          <datalist id="rangevalues">
+            <option value="0">0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+          </datalist>
+        </fieldset>
+
+        <input type="sumbit" value="Rate my page" />
+      </form>
     </main>
     <footer>
       <p>
