@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Morrilton Chamber of Commerce</title>
+    <meta name="description" content="WDD 230 Web Frontend Development - Justin Moll - Morrilton Chamber of Commerce">
+    <meta name="author" content="Justin Moll">
+    <meta property="og:title" content="Morrilton Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://justinmoll.github.io/wdd230/chamber/index.html">
+    <meta property="og:image" content="https://aymag.com/wp-content/uploads/2022/08/Downtown-Morrilton-copy.jpg">
+    <link rel="stylesheet" href="./styles/normalize.css">
+    <link rel="stylesheet" href="./styles/base.css">
+    <link rel="stylesheet" href="./styles/larger.css">
+    <link rel="icon" href="./images/favicon.ico">
+</head>
+<body>
+    <header>
+        <img src="./images/morritlon_chamber.jpg" alt="Morrilton Chamber of Commerce Logo">
+        <h1>Morrilton Chamber of Commerce</h1>
+    </header>
+    
+    <nav>
+        <ul class="navigation">
+            <li><a href="#">Home</a></li>
+            <li><a href="discover.html">Discover</a></li>
+            <li><a href="#">Directory</a></li>
+            <li><a href="join.html">Join</a></li>
+        </ul>
+    </nav>
+    <button id="menu"></button>
+    <main>
+        <h1>Membership Application Form</h1>
+        <form method="get" action="thankyou.html">
+        <fieldset>
+            <legend>Applicant Information</legend>
+            <label class="top">First Name<input type="text" id="fname" name="fname" required></label>
+            <label class="top">Last Name<input type="text" id="lname" name="lname" required></label>
+            <label class="top">Applicant's Title or Position within Company<input type="text" id="title" name="title" pattern="[a-zA-Z\s\-]{7,}"></label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Applicant Contact Information</legend>
+            <label class="top">Phone<input type="tel" name="phone" placeholder="1235551234" required></label>
+            <label class="top">Email<input type="email" name="email" placeholder="someone@gmail.com" required></label>
+        </fieldset>
+
+        <fieldset>
+            <legend class="top">Business Information</legend>
+            <label class="top">Business/organization's Name <input type="text" id="business" name="business" required></label>
+            <label class="top">Business/organization's Description <textarea name="description" id="description" cols="30" rows="10"></textarea></label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Membership Level</legend>
+            <label class="sbs"><input type="radio" name="membership" value="np">NP</label>
+            <label class="sbs"><input type="radio" name="membership" value="bronze">Bronze</label>
+            <label class="sbs"><input type="radio" name="membership" value="silver">Silver</label>
+            <label class="sbs"><input type="radio" name="membership" value="gold">Gold</label>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th colspan="5" scope="colgroup">Membership Benefits</th>
+                    </tr>
+                    <tr>
+                        <th scope="row"> </th>
+                        <th scope="row">NP</th>
+                        <th scope="row">Bronze</th>
+                        <th scope="row">Silver</th>
+                        <th scope="row">Gold</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Training</td>
+                        <td>✔️</td>
+                        <td>✔️</td>
+                        <td>✔️</td>
+                        <td>✔️</td>
+                    </tr>
+                    <tr>
+                        <td class="highlight">Event Discounts</td>
+                        <td class="highlight">❌</td>
+                        <td class="highlight">❌</td>
+                        <td class="highlight">✔️</td>
+                        <td class="highlight">✔️</td>
+                    </tr>
+                    <tr>
+                        <td>Advertising</td>
+                        <td>❌</td>
+                        <td>❌</td>
+                        <td>✔️</td>
+                        <td>✔️</td>
+                    </tr>
+                    <tr>
+                        <td class="highlight">Special Events</td>
+                        <td class="highlight">❌</td>
+                        <td class="highlight">❌</td>
+                        <td class="highlight">❌</td>
+                        <td class="highlight">✔️</td>
+                    </tr>
+                </tbody>
+            </table>
+        </fieldset>
+
+        <fieldset>
+            <legend>Timestamp</legend>
+            <label class="top">Time of Submission<input type="date" name="completeDate"></label>
+        </fieldset>
+        <form>
+        <input type="submit" value="Join Now" class="submitBtn">
+    </main>
+    <footer>
+        <p>
+            <span id="copyright"></span>
+            Justin Moll
+          </p>
+          <p>
+            <span id="last-modified"></span>
+          </p>
+    </footer>
+    <script src="scripts/chamber-script.js"></script>
+</body>
+</html>
