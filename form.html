@@ -40,82 +40,36 @@
       <form method="get" action="record.html">
         <fieldset>
           <legend>User information</legend>
-          <label
-            >Username*<input type="text" id="username" name="username" required
-          /></label>
-          <label>Last Name*<input type="text" name="lname" required /></label>
-          <label
-            >Phone<input type="tel" name="phone" placeholder="1235551234"
-          /></label>
-          <label
-            >Email*<input
-              type="email"
-              name="email"
-              placeholder="someone@gmail.com"
-              required
-          /></label>
-          <label
-            >Website<input type="url" name="url" placeholder="https://"
-          /></label>
+          <label class="top">Username*<input type="text" id="username" name="username" required/></label>
         </fieldset>
 
         <fieldset>
+          <div id="passmessage"></div>
           <legend>Password</legend>
-          <label
-            >Password<input
-              type="password"
-              id="password"
-              pattern="[a-zA-Z0-9]{8}"
-              name="password"
-              required
-          /></label>
-          <label
-            >Please re-enter your password<input
-              type="password"
-              id="password"
-              pattern="[a-zA-Z0-9]{8}"
-              name="password"
-              required
-          /></label>
+          <label class="top">Password - Must include 1. Uppercase Letter 2. 8 characters 3. One number<input type="password" id="password1" pattern="[a-zA-Z0-9]{8,}" name="password1" required/></label>
+          <label class="top">Please re-enter your password<input type="password" id="password2" pattern="[a-zA-Z0-9]{8,}" name="password2" required/></label>
         </fieldset>
 
         <fieldset>
           <legend>Please enter a valid email address</legend>
-          <label
-            >Email*<input
-              type="email"
-              name="email"
-              placeholder="someone@gmail.com"
-              pattern="[a-zA-Z0-9._%+-]+@byui\.edu$"
-              required
-          /></label>
+          <label class="top">Email*<input type="email" name="email" placeholder="someone@gmail.com" pattern="[a-zA-Z0-9._%+-]+@byui\.edu$" required/></label>
         </fieldset>
 
         <fieldset>
-          <legend>Page Rating</legend>
-          <label for="r">How would you rate this page?</label>
+          <label for="r">Please Rate This Page</label>
           <div id="rangevalue">0</div>
-          <input
-            type="range"
-            id="r"
-            name="r"
-            min="0"
-            max="5"
-            value="0"
-            step="1"
-            list="rangevalues"
-          />
+          <input type="range" id="r" name="r" min="0" max="5" value="0" step="1" list="rangevalues">
           <datalist id="rangevalues">
-            <option value="0">0</option>
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5</option>
+	          <option value="0">0</option>
+	          <option value="1">1</option>
+	          <option value="2">2</option>
+	          <option value="3">3</option>
+	          <option value="4">4</option>
+	          <option value="5">5</option>
           </datalist>
         </fieldset>
 
-        <input type="sumbit" value="Rate my page" />
+        <input type="submit" value="Rate my page" class="submitBtn" />
       </form>
     </main>
     <footer>
@@ -127,6 +81,7 @@
         <span id="last-modified"></span>
       </p>
     </footer>
+    <script src="scripts/form.js"></script>
     <script src="scripts/numvisits.js"></script>
     <script src="scripts/getDates.js"></script>
   </body>
